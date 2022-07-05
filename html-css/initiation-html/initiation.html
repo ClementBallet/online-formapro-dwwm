@@ -1,0 +1,149 @@
+<!-- Spécifie le type de document (HTML) https://developer.mozilla.org/fr/docs/Glossary/Doctype -->
+<!DOCTYPE html>
+<!-- Elément racine du document HTML. On y retrouve également l'attribur lang qui sert pour les lecteurs d'écrans (accessibilité) https://developer.mozilla.org/fr/docs/Web/HTML/Element/html -->
+<html lang="en">
+<!-- Head fournit des informations générales sur la document, notamment des métadonnées incluant son titre et des liens vers des scripts JS et des feuilles de style CSS https://developer.mozilla.org/fr/docs/Web/HTML/Element/head -->
+<head>
+    <!-- La balise meta représente une information de métadonnée. Ici, on y spécifie l'encodage de la page en UTF-8, ce qui permet d'interpréter notamment les accents, bien que la plupart des navigateurs les interprètent par défaut https://developer.mozilla.org/fr/docs/Web/HTML/Element/meta -->
+    <meta charset="UTF-8">
+    <!-- Balise spécifique à Internet Explorer et a pour effet de lui indiquer quel moteur de rendu utiliser https://blog.clever-age.com/fr/2008/09/30/x-ua-compatible-danger-ou-opportunite/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Indication quant à la taille du viewport (vue virtuelle), cette information est utilisée pour les terminaux mobiles uniquement. Initial-scale définit le ratio entre la taille de l'écran du terminal (device-width en portrait ou device-height en paysage) et la taille de la zone d'affichage (scale = échelle) https://developer.mozilla.org/fr/docs/Web/HTML/Viewport_meta_tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Définit le titre du document. Il s'affiche sur l'onglet du navigateur https://developer.mozilla.org/fr/docs/Web/HTML/Element/title -->
+    <title>Initiation au HTML5</title>
+    <!-- Définit un lien vers une feuille de style CSS externe. La balise link peut aussi servir pour les favicon et les fonts. https://developer.mozilla.org/fr/docs/Web/HTML/Element/link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Style permet d'intégrer de la mise en forme CSS directement dans le document HTML https://developer.mozilla.org/fr/docs/Web/HTML/Element/style -->
+    <style>
+        p {
+            color: orange;
+        }
+    </style>
+</head>
+<!-- Représente le contenu principal du document et où on va positionner notre code HTML. Il ne peut y avoir qu'un élément <body> par document. https://developer.mozilla.org/fr/docs/Web/HTML/Element/body -->
+<body>
+    <!-- Représente du contenu introductif, généralement un groupe de contenu introductif ou de contenu aidant à la navigation https://developer.mozilla.org/fr/docs/Web/HTML/Element/header -->
+    <header>
+        <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/Img -->
+        <img src="http://blog.labcellar.com/wp-content/uploads/2018/01/apple_logo_sq.png" alt="Logo">
+        <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/nav -->
+        <nav>
+            <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/ul -->
+            <ul>
+                <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/li -->
+                <li>
+                    <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/a -->
+                    <a href="#page-title">Item 1</a>
+                    <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol -->
+                    <ol start="14">
+                        <li><a href="">Item 1.1</a></li>
+                        <li><a href="">Item 1.2</a></li>
+                        <li><a href="">Item 1.3</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML/Element/ol" target="_blank" rel="noopener">Item 2</a>
+                </li>
+                <li>
+                    <a href="#">Item 3</a>
+                    <ul>
+                        <li>
+                            <a href="">Item 3.1</a>
+                        </li>
+                        <li>
+                            <a href="">Item 3.2</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Item 4</a>
+                </li>
+                <li>
+                    <a href="#">Item 5</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Représente le contenu principal du <body> du document https://developer.mozilla.org/fr/docs/Web/HTML/Element/main -->
+    <main>
+        <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/article -->
+        <article>
+            <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/Heading_Elements -->
+            <h1 id="page-title">Initiation au HTML5</h1>
+            <img src="" alt="">
+            <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/p -->
+            <p>
+                <!-- 
+                    https://developer.mozilla.org/fr/docs/Web/HTML/Element/strong
+                    https://developer.mozilla.org/fr/docs/Web/HTML/Element/b 
+                 -->
+                <strong>ipsum dolor sit amet</strong>, <b>consectetur</b>  adipisicing elit. Exercitationem incidunt iusto veritatis consectetur quasi. Dolorum facere, error similique reiciendis doloribus minima eveniet laudantium, expedita ea eius consectetur nam minus eligendi?
+            </p>
+            <h2>Un titre de niveau 2</h2>
+            <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/span -->
+            <p>Lorem ipsum dolor sit amet <span>amet consectetur adipisicing</span> consectetur adipisicing elit. Modi incidunt dolorem ullam consequuntur est fugit culpa vitae? Amet, rem, cupiditate ratione quas nesciunt consectetur libero exercitationem vitae odit qui cumque.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi incidunt dolorem ullam consequuntur est fugit culpa vitae? Amet, rem, cupiditate ratione quas nesciunt consectetur libero exercitationem vitae odit qui cumque.</p>
+
+            <h2>Un autre titre de niveau 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta consequuntur pariatur quasi cumque, culpa voluptate? Libero ipsum maiores nam, corporis, sapiente, illo ratione odit illum vel esse at corrupti exercitationem.</p>
+            <h3>Un titre de niveau 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta consequuntur pariatur quasi cumque, culpa voluptate? Libero ipsum maiores nam, corporis, sapiente, illo ratione odit illum vel esse at corrupti exercitationem.</p>
+            <h3>Un titre de niveau 3</h3>
+            <h4>Un titre de niveau 4</h4>
+            <h5>Un titre de niveau 5</h5>
+            <h6>Un titre de niveau 6</h6>
+        </article>
+        <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/aside -->
+        <aside>
+            <span>Nos meilleurs articles</span>
+            <nav>
+                <ol>
+                    <li>
+                        <a href="">Article 1</a>
+                    </li>
+                    <li>
+                        <a href="">Article 2</a>
+                        <ol>
+                            <li>
+                                <a href="">Article 2.1</a>
+                            </li>
+                            <li>
+                                <a href="">Article 2.2</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li>
+                        <a href="">Article 3</a>
+                    </li>
+                </ol>
+            </nav>
+        </aside>
+        <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/hr -->
+        <hr>
+    </main>
+    <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/section -->
+    <section>
+        <span>Les articles relatifs que vous pourriez aimer</span>
+        <article>
+            <span>Titre de l'article relatif 1</span>
+            <span>Résumé de l'article relatif 1</span>
+            <a href="">Lien vers l'article relatifs 1</a>
+        </article>
+        <article>
+            <span>Titre de l'article relatif 2</span>
+            <span>Résumé de l'article relatif 2</span>
+            <a href="">Lien vers l'article relatifs 2</a>
+        </article>
+        <article>
+            <span>Titre de l'article relatif 3</span>
+            <span>Résumé de l'article relatif 3</span>
+            <a href="">Lien vers l'article relatifs 3</a>
+        </article>
+    </section>
+    <!-- https://developer.mozilla.org/fr/docs/Web/HTML/Element/footer -->
+    <footer>
+        Ceci est mon footer. Voilà. 
+    </footer>
+</body>
+</html>
