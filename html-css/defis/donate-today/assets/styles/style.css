@@ -1,0 +1,13 @@
+/* This file manages all CSS files */
+
+/* Reset CSS */
+@import "reset.css";
+
+/* Import common */
+@import "fonts.css";
+@import "global.css";
+
+/* Import components */
+@import "header.css";
+@import "main.css";
+@import "footer.css";

@@ -1,0 +1,59 @@
+:root {
+    --cta-color: #ff5959;
+    --text-color: #121212;
+    --text-color-reverse: #ffffff;
+    --subtitle-color: #707070;
+    --card-color1: #edf5f6;
+    --card-color2: #ffeeee;
+    --card-color3: #fff4d6;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header, main, footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+body, h1, h2, h3, p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    color: var(--subtitle-color);
+}
+
+h1, h2, button, a, input[type="submit"] {
+    text-transform: capitalize;
+}
+
+h1 + p,
+h2 + p {
+    font-size: 25px;
+    font-weight: 400;
+    padding: 30px 20%;
+    margin: 25px 0;
+    letter-spacing: 1px;
+}
+
+a, button, input[type="submit"] {
+    background-color: var(--cta-color);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--text-color-reverse);
+    text-decoration: none;
+    font-size: 25px;
+    margin: 20px;
+    border-color: var(--cta-color);
+    cursor: pointer;
+}

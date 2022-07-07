@@ -1,0 +1,42 @@
+main > * {
+    max-width: 80%;
+}
+
+main section {
+    padding: 100px 0;
+}
+
+.choice button {
+    background-color: white;
+    color: var(--subtitle-color);
+    padding: 35px 15px;
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.choice button:hover {
+    border: 2px solid var(--cta-color);
+    color: var(--cta-color);
+    padding: 33px 13px;
+}
+
+#donate-now input[type="text"] {
+    width: 65%;
+    padding: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 30px;
+    text-align: center;
+}
+
+#donate-now input[type="text"]:focus-visible {
+    outline: none;
+}
+
+.card-section {
+    display: flex;
+    padding: 0 5%;
+    text-align: left;
+}
