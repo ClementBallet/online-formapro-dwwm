@@ -1,0 +1,64 @@
+h1,
+img,
+table,
+a,
+p,
+footer {
+    margin: 20px;
+}
+
+h1 {
+    background-color: #ffa600;
+    color: #fffbf6;
+    padding: 20px;
+    width: 460px;
+}
+
+table {
+    border: 1px solid grey;
+    width: 500px;
+    border-spacing: 0;
+}
+
+/* 
+table,
+td,
+th {
+    border: 1px solid grey;
+    border-collapse: collapse;
+} 
+*/
+
+thead {
+    background-color: lightgray;
+}
+
+tbody th {
+    font-weight: normal;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    text-align: left;
+}
+
+ul {
+    padding-inline-start: 13px;
+}
+
+footer {
+    width: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    background-color: rgba(255, 191, 0, 0.61);
+    padding: 10px;
+    color: black;
+    text-align: end;
+    margin-right: 0;
+}
