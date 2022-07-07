@@ -1,0 +1,84 @@
+/* 
+https://code.tutsplus.com/fr/tutorials/the-30-css-selectors-you-must-memorize--net-16048 
+https://developer.mozilla.org/fr/docs/Learn/CSS/Building_blocks/Selectors
+*/
+
+/* L'astérisque cible tous les éléments de la page. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* On peut directement appeler une balise. A noter que cette règle s'appliquera à toutes les balises du même nom */
+h1 {
+    color: blue;
+}
+
+/* L'utilisation du symbole dièse comme sélecteur nous permet de cibler un élément par son id. Un id est normalement unique sur une page HTML */
+#h1 {
+    color: red;
+}
+
+/* Ceci est un sélecteur de classe. */
+.h1 {
+    color: yellow;
+}
+
+/* 
+Les ordres de d'importances en CSS (du plus fort au plus faible) :
+!important > style inline dans le html > id > classe/pseudo-classes/attributs > balise
+*/
+
+/* Sélecteur descendant. C'est lui que vous utilisez quand vous avez besoin d'être plus spécifique avec vos sélecteurs. */
+p span {
+    font-size: 19px;
+}
+
+/* La pseudo-classe :link est utilisée pour cibler toutes les balises d'ancres qui ne sont pas encore cliquées. */
+a:link { 
+    color: red; 
+}
+
+/* La pseudo-classe :visited permet d'appliquer une mise en forme spécifique aux seules balises d'ancres de la page qui ont été cliquées ou visitées. */
+a:visited { 
+    color: purple; 
+}
+
+/* Sélecteur adjacent. Il permet de ne sélectionner que l'élément qui est immédiatement précédé par le premier élément ciblé. */
+h1 + article {
+    margin-top: 50px;
+}
+
+/* La différence entre le X Y standard et X > Y est que ce dernier ne sélectionnera que des enfants directs. */
+ul.list > li > a {
+    font-size: 24px;
+}
+
+/* Sélectionne n'importe quel élément p, du moment qu'ils suivent un autre p (moins strict que X + Y) */
+p ~ p {
+    margin-top: 20px;
+}
+
+/* Ce sélecteur d'attributs ne ciblera, dans l'exemple ci-dessous, que les balises qui ont un attribut id. On peut évidemment sélectionner un autre attribut. */
+[id] {
+    border: 3px solid black;
+}
+
+/* Applique une mise en forme à toutes les balises d'ancres (a) qui contiennent un lien vers https://www.google.fr/ */
+a[href="https://www.google.fr/"] {
+    color: #1f6053;
+}
+
+/* Pseudo-classe qui applique des règles CSS au survol de la souris sur l'élément ciblé */
+p:hover {
+    background-color: yellow;
+}
+
+/* Sélectionne tous les p sauf ceux qui ont la classe intro */
+p:not(.intro) {
+    color: blueviolet;
+}
+
+p::first-letter {
+    font-size: 2em;
+}
