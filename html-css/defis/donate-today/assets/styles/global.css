@@ -6,6 +6,8 @@
     --card-color1: #edf5f6;
     --card-color2: #ffeeee;
     --card-color3: #fff4d6;
+    --input-color: #d9d9d9;
+    --footer-color: #0b0d17;
 }
 
 *, *::before, *::after {
@@ -27,10 +29,15 @@ body, h1, h2, h3, p {
 
 h2 {
     font-size: 50px;
+    font-weight: 700;
 }
 
 p {
+
     color: var(--subtitle-color);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 h1, h2, button, a, input[type="submit"] {
@@ -39,11 +46,8 @@ h1, h2, button, a, input[type="submit"] {
 
 h1 + p,
 h2 + p {
-    font-size: 25px;
-    font-weight: 400;
     padding: 30px 20%;
     margin: 25px 0;
-    letter-spacing: 1px;
 }
 
 a, button, input[type="submit"] {
@@ -56,4 +60,9 @@ a, button, input[type="submit"] {
     margin: 20px;
     border-color: var(--cta-color);
     cursor: pointer;
+}
+
+input,
+input[type="text"]:focus-visible {
+    outline: none;
 }

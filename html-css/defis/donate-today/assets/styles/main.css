@@ -6,6 +6,7 @@ main section {
     padding: 100px 0;
 }
 
+/* Section donate-now */
 .choice button {
     background-color: white;
     color: var(--subtitle-color);
@@ -16,7 +17,8 @@ main section {
     cursor: pointer;
 }
 
-.choice button:hover {
+.choice button:hover,
+.choice button:focus {
     border: 2px solid var(--cta-color);
     color: var(--cta-color);
     padding: 33px 13px;
@@ -31,12 +33,116 @@ main section {
     text-align: center;
 }
 
-#donate-now input[type="text"]:focus-visible {
-    outline: none;
+input:focus::-webkit-input-placeholder {
+    color: white;
 }
 
+/* Section cards */
 .card-section {
     display: flex;
     padding: 0 5%;
     text-align: left;
+    gap: 50px;
+}
+
+.card-item {
+    padding: 50px 30px;
+}
+
+.card-item * {
+    padding-bottom: 30px;
+}
+
+.card-item h3 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.card-item p {
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+.card-item:nth-child(1) {
+    background-color: var(--card-color1);
+}
+
+.card-item:nth-child(2) {
+    background-color: var(--card-color2);
+}
+
+.card-item:nth-child(3) {
+    background-color: var(--card-color3);
+}
+
+/* Block media + text */
+.block-media-text {
+    display: flex;
+    gap: 100px;
+    text-align: left;
+}
+
+.block-media-text > div {
+    width: 55%;
+}
+
+.block-media-text p {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.block-media-text p:nth-last-of-type(1) {
+    margin-bottom: 80px;
+}
+
+.block-media-text img {
+    border-radius: 5px;
+    width: 45%;
+}
+
+.block-media-text a {
+    margin: 0;
+}
+
+.block-media-text:nth-child(2n+1) {
+    flex-direction: row-reverse; /* reverse image and text */
+}
+
+/* Form newsletter */
+
+.newsletter form {
+    width: 70%;
+    background-color: var(--card-color3);
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter form div {
+    width: 25%;
+}
+
+.newsletter input {
+    width: 100%;
+    height: 50px;
+    border-width: 0;
+    height: 100%;
+}
+
+.newsletter input[type="text"] {
+    border-radius: 5px 0 0 5px;
+    background-color: var(--input-color);
+    padding: 20px 30px;
+    color: var(--subtitle-color);
+}
+
+.newsletter input[type="text"]:focus::-webkit-input-placeholder {
+    color: var(--input-color);
+}
+
+.newsletter input[type="submit"] {    
+    margin: 0;
+    border-radius: 0 5px 5px 0;
 }

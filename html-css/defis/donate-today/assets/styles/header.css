@@ -5,6 +5,23 @@ header {
     height: 100vh;
     color: var(--text-color-reverse);
     padding: 0 25%;
+    position: relative;
+
+}
+
+header::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 50%, rgba(255,255,255,0.5) 100%);
+}
+
+header * {
+    position: relative; /* fix text opacity on background */
 }
 
 h1 {
