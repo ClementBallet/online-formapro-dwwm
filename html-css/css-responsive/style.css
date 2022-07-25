@@ -1,0 +1,111 @@
+* {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #ffff0082;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+main {
+    display: flex;
+}
+
+main article {
+    width: 70%;
+    padding: 20px;
+    background-color: #ff00007a;
+}
+
+.article-image {
+    position: relative;
+}
+
+.article-image img {
+    width: 100%;
+}
+
+.article-image .cat {
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: #ff00007a;
+    font-size: 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+main aside {
+    width: 30%;
+    background-color: #0080007a;
+}
+
+main aside nav {
+    position: sticky;
+    top: 20px;
+}
+
+main aside li + li {
+    margin-top: 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #0000ff73;
+}
+
+.back-to-top {
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+  
+/* Gestion de la taille mobile */
+@media screen and (max-width: 426px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Gestion de la taille tablette et en-dessous */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    main article,
+    main aside {
+        width: 100%;
+    }
+
+    p {
+        font-size: 20px;
+    }
+}
